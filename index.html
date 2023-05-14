@@ -8,22 +8,13 @@
     <script defer src="https://pyscript.net/releases/2023.03.1/pyscript.js"></script>
 </head>
 <body>
-    <py-script>
-import asyncio
-
-async def main():
-    for i in range(3):
-        print(i)
-        await asyncio.sleep(1)
-
-asyncio.ensure_future(main())
-</py-script>
+    
     <h1>Basic demo</h1>
     <p id="today"></p>
     <div id ="lists"><p></p></div>
     <py-config src="./pyscript.toml"></py-config>
     <py-script src="./main.py"></py-script>
- # This version is acceptable
+
 
     <!--REPL & write to output-->
     <div id="replOutput"></div>
