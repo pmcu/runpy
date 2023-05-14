@@ -1,1 +1,1 @@
-packages =['requests','pyodide-http','pandas']
+packages =['requests','pyodide-http','pandas','lxml']
