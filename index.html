@@ -8,13 +8,7 @@
     <script defer src="https://pyscript.net/releases/2023.03.1/pyscript.js"></script>
 </head>
 <body>
-    <h1>Basic demo</h1>
-    <p id="today"></p>
-    <div id ="lists"><p></p></div>
-    <py-config src="./pyscript.toml"></py-config>
-    <py-script src="./main.py"></py-script>
- # This version is acceptable
-<py-script>
+    <py-script>
 import asyncio
 
 async def main():
@@ -24,6 +18,13 @@ async def main():
 
 asyncio.ensure_future(main())
 </py-script>
+    <h1>Basic demo</h1>
+    <p id="today"></p>
+    <div id ="lists"><p></p></div>
+    <py-config src="./pyscript.toml"></py-config>
+    <py-script src="./main.py"></py-script>
+ # This version is acceptable
+
     <!--REPL & write to output-->
     <div id="replOutput"></div>
     <py-repl output="replOutput">
