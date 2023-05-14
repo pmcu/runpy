@@ -1,11 +1,11 @@
-import datetime as dt
-import pandas as pd
+#import datetime as dt
+#import pandas as pd
 #print("Hello, World! and Dogs")
 
 
 
-df = pd.read_xml("leabhairB.xml")
+#df = pd.read_xml("leabhairB.xml")
 
-def l_func2():
-    Element("lists").write(df)
+#def l_func2():
+#    Element("lists").write(df)
 #l_func() 
