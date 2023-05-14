@@ -14,6 +14,6 @@ list =[
 ]
 df = pd.DataFrame(list)
 
-def l_func():
+def showlist():
     Element("lists").write(df)
-l_func() 
+showlist() 
