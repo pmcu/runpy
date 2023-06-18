@@ -14,7 +14,7 @@ list =[
 def showlist():
     txt= ""
     for item in list:
-        txt.append(str(item))
-    print(txt)
-        #Element("lists").write(f'{item}\n')
+        txt=str(item)
+    #print(txt)
+    Element("lists").write(txt)
 #showlist() 
