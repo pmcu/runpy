@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.03.1/pyscript.css" />
+    <script defer src="https://pyscript.net/releases/2023.03.1/pyscript.js"></script>
+</head>
+<body>
+    <p><a href="hello.html">Beannacht</a></p>
+    <h1>Basic demo</h1>
+    <p id="today"></p>
+    <div id ="lists"><p></p></div>
+    <py-config src="./pyscript.toml"></py-config>
+    <py-script src="./main.py"></py-script>
+
+
+    <!--REPL & write to output-->
+    <div id="replOutput"></div>
+    <py-repl output="replOutput">
+        hello = "Hello world!"
+        hello
+    </py-repl>
+
+    
+
+    <!--pyscript write to element-->
+    <b><p>Today is <u><label id='today'></label></u></p></b>
+    <br>
+
+    <py-script>
+      import datetime as dt
+      Element('today').write(dt.date.today().strftime('%A %B %d, %Y'))
+</py-script>
+
+    <!--Handling click events-->
+    <button py-click="current_time()" id="get-time" class="py-button">Get current time</button>
+    <p id="current-time"></p>
+    <button py-click="showlist()" id="get-list" class="py-button">Get the list</button>
+  
+    <p id="current-time"></p>
+
+    <py-script>
+      import datetime
+
+      def current_time():
+          now = datetime.datetime.now()
+
+          # Get paragraph element by id
+          paragraph = Element("current-time")
+
+          # Add current time to the paragraph element
+          paragraph.write(now.strftime("%Y-%m-%d %H:%M:%S"))
+    </py-script>
+    <div style="z-index:9998;color:#FFF;font-family:sans-serif;background-color:#292929;padding:2px 8px;position:fixed;bottom:0;right:0;left:0"></div>
+    <div style="z-index:9999;font-size: 0.7rem;color:#FFF;font-family:sans-serif;padding: 5px;position:fixed;bottom:0;right:0">Made on pyscript.com&nbsp;│&nbsp;View Code&nbsp;&nbsp;</div></a>
+    </body>
+
+</html>
