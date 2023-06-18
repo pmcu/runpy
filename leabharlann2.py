@@ -1449,7 +1449,9 @@ docs = [
  {"@id": "1434", "nod": "LU106", "teideal": "Gaeltacht Thír Chonaill: Ó Ghleann go Fánaid", "bf": "2000", "bl_prl": "2020"},
  {"@id": "1435", "nod": "LU108", "teideal": "Nally as Maigh Eo", "bf": "1998", "bl_prl": "2021"} ] 
 #leabharlann.leabhair.insert_many(docs)
-lbhrs = leabharlann.leabhair.find()
-for l in lbhrs:
-    print(l)
+def getbook():
+  lbhrs = leabharlann.leabhair.find()
+  for l in lbhrs:
+      print(l)
+
 
