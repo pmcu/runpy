@@ -13,5 +13,5 @@ list =[
 
 def showlist():
     for item in list:
-        Element("lists").write(item)
+        Element("lists").write(f'{item}\n')
 #showlist() 
