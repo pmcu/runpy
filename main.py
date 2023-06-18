@@ -14,5 +14,5 @@ list =[
 def showlist():
 
     for item in list:
-        Element("lists").innerText = Element("lists").innerText + item
+        print(item)
 showlist() 
