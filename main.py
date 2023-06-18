@@ -17,4 +17,4 @@ def showlist():
         txt=str(item)
     #print(txt)
     Element("lists").write(txt)
-#showlist() 
+showlist() 
