@@ -12,6 +12,9 @@ list =[
 #df = pd.DataFrame(list)
 
 def showlist():
+    txt= ""
     for item in list:
-        Element("lists").write(f'{item}\n')
+        txt.append(str(item))
+    print(txt)
+        #Element("lists").write(f'{item}\n')
 #showlist() 
