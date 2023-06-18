@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://pyscript.net/releases/2023.03.1/pyscript.css" />
     <script defer src="https://pyscript.net/releases/2023.03.1/pyscript.js"></script>
+  <py-env>
+        - numpy
+        - matplotlib
+        
+    </py-env>
+
 </head>
 <body>
     <!--<p><a href="hello.html">Beannacht</a></p> -->
     <h1>Leathanach</h1>
    
     <div id ="lists"></div>
-    <py-config src="./pyscript.toml"></py-config>
+    <!--<py-config src="./pyscript.toml"></py-config> -->
     <py-script src="./main.py"></py-script>
 
     <div >
         <py-repl  id="my-repl" auto-generate="true"></py-repl> 
     </div>
  
-    <py-env>
-        - numpy
-        - matplotlib
-        
-    </py-env>
+  
 
     
 
