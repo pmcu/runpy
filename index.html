@@ -18,16 +18,8 @@
 
     <!--REPL & write to output-->
     <div id="replOutput"></div>
-    <py-repl output="replOutput">
-        hello = "Hello world!"
-        hello
+    <py-repl output="replOutput">     
     </py-repl>
-
-    
-
-    <!--pyscript write to element-->
-    <b><p>Today is <u><label id='today'></label></u></p></b>
-    <br>
 
     <py-script>
       import datetime as dt
@@ -35,8 +27,7 @@
 </py-script>
 
     <!--Handling click events-->
-    <button py-click="current_time()" id="get-time" class="py-button">Get current time</button>
-    <p id="current-time"></p>
+
     <button py-click="showlist()" id="get-list" class="py-button">Get the list</button>
   
     <p id="current-time"></p>
