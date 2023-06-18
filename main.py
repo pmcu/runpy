@@ -12,5 +12,7 @@ list =[
 #df = pd.DataFrame(list)
 
 def showlist():
-    Element("lists").write(list)
+    #Element("lists").write(list)
+    for item in list:
+        Element("lists").write(item)
 #showlist() 
